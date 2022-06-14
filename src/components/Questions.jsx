@@ -9,6 +9,7 @@ function Questions() {
     const [name, setName] = useState("");
     const [rating, setRating] = useState("");
     const [link, setLink] = useState("");
+    const [questionTag, setQuestionTag] = useState("strings");
 
     const userdata = async (user) => {
         let data = await fetch(
@@ -77,7 +78,7 @@ function Questions() {
           }
         }
     };
-
+    
     useEffect(()=> {
         async function fetchdata(){
           const spinner = document.getElementById("spinner");
@@ -92,40 +93,6 @@ function Questions() {
         }
         fetchdata();
       });
-    
-    // const onclick800 = async () => {
-    //     let c = 0;
-    //     let res = await response.q800.sort(function (a, b) {
-    //       const lastperson = a.submissions;
-    //       const nextperson = b.submissions;
-    //       if (lastperson > nextperson) {
-    //         return -1;
-    //       } else {
-    //         return 1;
-    //       }
-    //     });
-    //     for (let i = 1; i <= 15; i++) {
-    //       let idx = document.getElementById(`${i}${0}`);
-    //       idx.innerHTML = i;
-    //       let name = document.getElementById(`${i}${1}`);
-    //       name.innerHTML = `${res[c].name}`;
-    //       let rating = document.getElementById(`${i}${3}`);
-    //       rating.innerHTML = 800;
-    //       let frequency = document.getElementById(`${i}${2}`);
-    //       frequency.innerHTML = `${res[c].submissions}`;
-    //       let s = "";
-    //       let tags = document.getElementById(`${i}${4}`);
-    //       response.q900[c].tags.forEach((element, index) => {
-    //         s += element[0].toUpperCase() + element.substring(1);
-    //         if (index === response.q800[c].tags.length - 1) {
-    //         } else {
-    //           s += ", ";
-    //         }
-    //       });
-    //       tags.innerHTML = s;
-    //       c++;
-    //     }
-    //   };
 
     const onclick800 = async () => {
         const spinner = document.getElementById("spinner");
@@ -639,7 +606,7 @@ function Questions() {
     const getQuestions = async () => {
         let id = document.getElementById("spinner");
         let questions = await fetch(
-          "https://codeforces.com/api/problemset.problems?tags=strings"
+          `https://codeforces.com/api/problemset.problems?tags=`
         );
         questions = await questions.json();
         let q800 = [];
@@ -906,6 +873,7 @@ function Questions() {
         return res;
     };
 
+
     return (
       <>
         <div id="container">
@@ -927,6 +895,56 @@ function Questions() {
                 ></ion-icon>
               </label>
             </form>
+            {/* <div class="dropdown">
+            <button class="dropbtn">Tag</button>
+            <div class="dropdown-content">
+              <a href="#">Binary Search</a>
+              <a href="#">Bitmasks</a>
+              <a href="#">Brute Force</a>
+              <a href="#">combinatorics</a>
+              <a href="#">constructive algorithms</a>
+              <a href="#">data structures</a>
+              <a href="#">dfs and similar</a>
+              <a href="#">dp</a>
+              <a href="#">dsu</a>
+              <a href="#">geometry</a>
+              <a href="#">graphs</a>
+              <a href="#">greedy</a>
+              <a href="#">implementation</a>
+              <a href="#">interactive</a>
+              <a href="#">math</a>
+              <a href="#">sortings</a>
+              <a href="#">strings</a>
+              <a href="#">trees</a>
+              <a href="#">two pointers</a>
+            </div>
+          </div> */}
+
+          {/* <select 
+            className = "custom-select"
+            value = {questionTag}
+            onChange = {(e) => {
+              const selectedTag = e.target.value;
+              setQuestionTag(selectedTag);
+            }}>
+            <option value = "implementation">implementation</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+            <option value = "strings">strings</option>
+
+          </select> */}
           </div>
           <div id="invisible">
             <div id="one">
