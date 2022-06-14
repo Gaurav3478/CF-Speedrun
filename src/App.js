@@ -1,5 +1,9 @@
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Header from './components/Header';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -10,16 +14,10 @@ function App() {
     <>
       <BrowserRouter>
         <Header/>
-        <Switch>
-          <Route exact path="/">
-            <Questions/>
-          </Route>
-        </Switch>
-        <Switch>
-          <Route exact path="/about">
-            <About/>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/CF-Speedrun" element={<Questions />} />
+          <Route path="/CF-Speedrun/about" element={<About />} />
+        </Routes>
         <Footer/>
       </BrowserRouter>
     </>

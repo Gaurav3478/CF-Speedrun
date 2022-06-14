@@ -36,12 +36,12 @@ function About() {
           <div>
             <img src={divyanshuk} alt="" />
             <h4>Divyanshu Katyan</h4>
-            <p className = "xyz">Back end Dev</p>
+            <p className = "xyz">Back-end Dev</p>
           </div>
           <div>
             <img src={gauravt} alt="" />
             <h4>Gaurav Thakur</h4>
-            <p className = "xyz">Front End Dev</p>
+            <p className = "xyz">Front-end Dev</p>
           </div>
           <div>
             {/* <img src={katyan} alt="" /> */}

@@ -10,13 +10,14 @@ function Questions() {
     const [rating, setRating] = useState("");
     const [link, setLink] = useState("");
     const [questionTag, setQuestionTag] = useState("strings");
+    const [cfhandle, setCfhandle] = useState("");
 
     const userdata = async (user) => {
-        let data = await fetch(
-          `https://codeforces.com/api/user.info?handles=${user}`
-        );
-        data = await data.json();
-        return data;
+          let data = await fetch(
+            `https://codeforces.com/api/user.info?handles=${user}`
+          );
+          data = await data.json();
+          return data;
     };
 
     const finduser = async (user) => {
@@ -92,7 +93,7 @@ function Questions() {
           inner.style.display = "block";
         }
         fetchdata();
-      });
+      }, []);
 
     const onclick800 = async () => {
         const spinner = document.getElementById("spinner");
@@ -872,7 +873,6 @@ function Questions() {
         // console.log(res);
         return res;
     };
-
 
     return (
       <>

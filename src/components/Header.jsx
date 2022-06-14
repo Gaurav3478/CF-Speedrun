@@ -16,7 +16,7 @@ function Header() {
             <Link
               className ={`navlink ${location.pathname === "/" ? "active" : ""}`}
               aria-current="page"
-              to="/"
+              to="/CF-Speedrun"
             >
               Home
             </Link>
@@ -27,7 +27,7 @@ function Header() {
                 location.pathname === "/about" ? "active" : ""
               }`}
               aria-current="page"
-              to="/about"
+              to="/CF-Speedrun/about"
             >
               About
             </Link>
