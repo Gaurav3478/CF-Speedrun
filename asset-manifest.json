@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/CF-Speedrun/static/css/main.7456bd42.css",
+    "main.js": "/CF-Speedrun/static/js/main.2208421d.js",
+    "static/js/787.56accff3.chunk.js": "/CF-Speedrun/static/js/787.56accff3.chunk.js",
+    "static/media/US_soft.jpg": "/CF-Speedrun/static/media/US_soft.60f4f209996f695baab4.jpg",
+    "static/media/Katyan.jpeg": "/CF-Speedrun/static/media/Katyan.c96a7170231a2648bab1.jpeg",
+    "static/media/logo.png": "/CF-Speedrun/static/media/logo.53443a99a2aa7a8eaff1.png",
+    "index.html": "/CF-Speedrun/index.html",
+    "main.7456bd42.css.map": "/CF-Speedrun/static/css/main.7456bd42.css.map",
+    "main.2208421d.js.map": "/CF-Speedrun/static/js/main.2208421d.js.map",
+    "787.56accff3.chunk.js.map": "/CF-Speedrun/static/js/787.56accff3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7456bd42.css",
+    "static/js/main.2208421d.js"
+  ]
+}
