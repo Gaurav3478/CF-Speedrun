@@ -9,8 +9,7 @@ function Questions() {
     const [name, setName] = useState("");
     const [rating, setRating] = useState("");
     const [link, setLink] = useState("");
-    const [questionTag, setQuestionTag] = useState("strings");
-    const [cfhandle, setCfhandle] = useState("");
+    // const [questionTag, setQuestionTag] = useState("strings"); //use to add tags in the future
 
     const userdata = async (user) => {
           let data = await fetch(
