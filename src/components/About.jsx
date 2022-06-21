@@ -15,7 +15,7 @@ function About() {
                 <span className="text-primary1">About</span> CF-Speedrun
               </h1>
               <p>
-              CP Speedrun is an app to help YOU increase your rating on Codeforces! It lists the 15 most solved questions for a particular rating - do these and you will surely advance to the next level. Simply enter your profile name, pick a rating 100-200 points above your current rating, and start solving the questions.
+              CF Speedrun is an app to help YOU increase your rating on Codeforces! It lists the 15 most solved questions for a particular rating - do these and you will surely advance to the next level. Simply enter your profile name, pick a rating 100-200 points above your current rating, and start solving the questions.
               </p>
               {/* <p> */}
                 {/* A simple and effective way to improve your coding skills! */}
