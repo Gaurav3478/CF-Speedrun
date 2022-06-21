@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CF-Speedrun/static/css/main.764c06cf.css",
-    "main.js": "/CF-Speedrun/static/js/main.defd71f8.js",
+    "main.js": "/CF-Speedrun/static/js/main.6ede1a32.js",
     "static/js/787.56accff3.chunk.js": "/CF-Speedrun/static/js/787.56accff3.chunk.js",
     "static/media/US_soft.jpg": "/CF-Speedrun/static/media/US_soft.60f4f209996f695baab4.jpg",
     "static/media/Upreti.jpeg": "/CF-Speedrun/static/media/Upreti.d70dd8aab1e0660de4a0.jpeg",
@@ -9,11 +9,11 @@
     "static/media/logo.png": "/CF-Speedrun/static/media/logo.53443a99a2aa7a8eaff1.png",
     "index.html": "/CF-Speedrun/index.html",
     "main.764c06cf.css.map": "/CF-Speedrun/static/css/main.764c06cf.css.map",
-    "main.defd71f8.js.map": "/CF-Speedrun/static/js/main.defd71f8.js.map",
+    "main.6ede1a32.js.map": "/CF-Speedrun/static/js/main.6ede1a32.js.map",
     "787.56accff3.chunk.js.map": "/CF-Speedrun/static/js/787.56accff3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.764c06cf.css",
-    "static/js/main.defd71f8.js"
+    "static/js/main.6ede1a32.js"
   ]
 }
